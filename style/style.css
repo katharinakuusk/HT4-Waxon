@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Raleway Regular";
+    src: url(../fonts/Raleway/Raleway-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf) format('ttf');
+}
+
+html,
+body {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    background: url(../images/headerBackground.jpg) no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 375px;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    width: 9.4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo_pic {
+    width: 64px;
+}
+
+.header__logo_text {
+    font-family: "Raleway Regular";
+    font-size: 34px; 
+    letter-spacing: -1.4px;
+    color: #fff;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__list_item {
+    /*display: inline-block;*/
+}
+
+.navbar__list_item:nth-last-child(n+2) {
+    margin-right: 30px;
+}
+
+.navbar__list_item a {
+    text-decoration: none;
+    font-family: "Montserrat Light";
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.navbar_dropdown {
+    display: none;
+}
+
+.navbar_image {
+    width: 100%;
+}
