@@ -7,86 +7,237 @@
     <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header__logo">
-            <picture class="header__logo_pic">
-                <source type="image/svg+xml" srcset="images/logo.svg">
-                <img src="images/logo.png" alt="Logo" >
-            </picture>
-            <div class="header__logo_text">
-                Waxom
-            </div>
+    <header class="header__slider">  <!--Slider and header -->
+       <div class="header__top-wrap">    <!-- Top: logo and navbar -->
+            <div class="header__logo">    <!-- Logo -->
+                <picture class="header__logo_pic">
+                    <source type="image/svg+xml" srcset="images/logo.svg">
+                    <img src="images/logo.png" alt="Logo" >
+                </picture>
+                <div class="header__logo_text">
+                    Waxom
+                </div>
+            </div>    <!-- / Logo -->
+            <nav class="navbar">
+               <div class="navbar__wide">    <!-- Navbar for screen more then 1469px -->
+                    <ul class="navbar__wide_list">
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">About&nbsp;us</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Features</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Shortcodes</a>
+                        </li>
+                        <li class="navbar__wide_list_item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__wide_image navbar__wide_image-cart">
+                        <img src="images/iconCart.svg" alt="Cart" onerror="this.src='iconCart.png'">
+                    </div>
+                    <div class="navbar__wide_image navbar__wide_image-search">
+                        <img src="images/iconSearch.svg" alt="Search" onerror="this.src='iconSearch.png'">
+                    </div>
+                   <!-- <picture class="navbar__wide_image">
+                        <source type="image/svg+xml" srcset="images/iconCart.svg" width="18px">
+                        <img src="images/iconCart.png" alt="Logo" >
+                    </picture>
+                    <picture class="navbar__wide_image">
+                        <source type="image/svg+xml" srcset="images/iconSearch.svg" width="24px">
+                        <img src="images/iconSearch.png" alt="Logo" >
+                    </picture> -->
+                </div>    <!-- / Navbar for screen more then 1469px -->
+
+              <!-- Cart and Search icons for screen less then 1469px -->
+               <picture class="navbar_image-for-dropdown-nav">
+                    <source type="image/svg+xml" srcset="images/iconCart.svg">
+                    <img src="images/iconCart.png" alt="Logo" >
+                </picture>
+                <picture class="navbar_image-for-dropdown-nav">
+                    <source type="image/svg+xml" srcset="images/iconSearch.svg">
+                    <img src="images/iconSearch.png" alt="Logo" >
+                </picture>
+                <!-- / Cart and Search icons for screen less then 1469px -->
+
+                <div class="navbar__dropdown" tabindex="0" >    <!-- Navbar for screens less then 1469px and more then tablets -->
+                   <button id="navbar_dropdown_button" class="navbar_dropdown_button" >
+                       <div></div>
+                       <div></div>
+                       <div></div>
+                   </button>
+                    <ul class="navbar_dropdown_list" tabindex="1">
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Features</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Shortcodes</a>
+                        </li>
+                        <li class="navbar_dropdown_list_item">
+                            <a href="#">Contact</a>
+                        </li>                    
+                    </ul>
+                </div>    <!-- / Navbar for screens less then 1469px and more then tablets -->
+            </nav>
+        </div>    <!-- / Top: logo and navbar -->
+        
+        <!--Real slider -->
+        <input type="radio" name="point" id="header__slider_slide-1" checked>
+        <input type="radio" name="point" id="header__slider_slide-2">
+        <input type="radio" name="point" id="header__slider_slide-3">
+        <input type="radio" name="point" id="header__slider_slide-4">
+        <input type="radio" name="point" id="header__slider_slide-5">
+        <div class="header__slider_slide-wrap">
+            <article class="header__slider_slide header__slider_slide-1">
+                <h2 class="header__title-unique-and-modern">Unique and Modern Design</h2>
+                <h1 class="header__title-largest">Portfolio PSD Template</h1>
+                <div class="header__text">
+                    Nam liber tempor cum soluta nobis eleifend option congue nihil imper-<br>diet doming id quod mazim placerat facer possim assum.
+                </div>
+                <div class="header__button">
+                    <a href="#" class="header__button">get started</a>
+                </div>
+            </article>
+            <article class="header__slider_slide header__slider_slide-2">
+                <h2 class="header__title-unique-and-modern">Unique and Modern Design</h2>
+                <h1 class="header__title-largest">Portfolio PSD Template</h1>
+                <div class="header__text main-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse reprehenderit neque, fuga, aut dolor in sit omnis libero ipsam nulla nemo ab aspernatur doloremque vitae adipisci quas illum, repellat eveniet.
+                </div>
+                <div class="header__button">
+                    <a href="#" class="header__button">get started</a>
+                </div>
+            </article>
+            <article class="header__slider_slide header__slider_slide-3">
+                <h2 class="header__title-unique-and-modern">Unique and Modern Design</h2>
+                <h1 class="header__title-largest">Portfolio PSD Template</h1>
+                <div class="header__text">
+                    Cumque laboriosam ducimus, eius, alias error deserunt soluta cupiditate qui, et officia, aspernatur necessitatibus id asperiores quaerat!Molestiae dolores fuga ut provident quas nobis voluptates quisquam hic, quasi dolorum eos.
+                </div>
+                <div class="header__button">
+                    <a href="#" class="header__button">get started</a>
+                </div>
+            </article>
+            <article class="header__slider_slide header__slider_slide-4">
+                <h2 class="header__title-unique-and-modern">Unique and Modern Design</h2>
+                <h1 class="header__title-largest">Portfolio PSD Template</h1>
+                <div class="header__text">
+                    Nobis nostrum vel iste, eos explicabo? Sit, non sequi assumenda est repudiandae ex!Magni, voluptatibus aspernatur totam fugiat nihil non officiis esse, aliquid minima eligendi voluptatum, quis cum saepe ipsa.
+                </div>
+                <div class="header__button">
+                    <a href="#" class="header__button">get started</a>
+                </div>
+            </article>
+            <article class="header__slider_slide header__slider_slide-5">
+                <h2 class="header__title-unique-and-modern">Unique and Modern Design</h2>
+                <h1 class="header__title-largest">Portfolio PSD Template</h1>
+                <div class="header__text">
+                    Laudantium, ullam, qui. Sunt molestias error impedit quidem fugiat vitae ab, voluptate exercitationem aliquam dolorem tempore consequatur ipsam aliquid cum beatae quae hic, ad repudiandae odit, temporibus voluptates earum quasi.
+                </div>
+                <div class="header__button">
+                    <a href="#" class="header__button">get started</a>
+                </div>
+            </article>
         </div>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__list_item">
-                    <a href="#">Home</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">About us</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">Portfolio</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">Features</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">Pricing</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">Shortcodes</a>
-                </li>
-                <li class="navbar__list_item">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+        
+        <div class="header__slider_arrows">
+            <label for="header__slider_slide-1"></label>
+			<label for="header__slider_slide-2"></label>
+			<label for="header__slider_slide-3"></label>
+			<label for="header__slider_slide-4"></label>
+			<label for="header__slider_slide-5"></label>
+        </div>
+        
+        <div class="header__slider_controls">
+            <label for="header__slider_slide-1"></label>
+            <label for="header__slider_slide-2"></label>
+            <label for="header__slider_slide-3"></label>
+            <label for="header__slider_slide-4"></label>
+            <label for="header__slider_slide-5"></label>
+	    </div>
+	   <!-- / Real slider -->
+    </header> <!-- / Slider and header -->
+    <main>
+        <section class="departments">
+            <a class="departments__link" href="#" ><span>
+               <article class="departmemts__department">
+                    <object class="departmemts__department_icon" typa="image/svg+xml" data="images/icons/iconPencil.svg" width="49px" height="49px"></object>
+                    <h5 class="departmemts__department_title">Web &#38; App Design</h5>
+                    <div class="departmemts__department_text">
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                    </div>
+                    <hr>
+                </article>
+            </span></a>
+            <a class="departments__link" href="#" ><span>
+                <article class="departmemts__department">
+                    <object class="departmemts__department_icon" typa="image/svg+xml" data="images/icons/iconLayers.svg" width="44px" height="40px"></object>
+                    <h5 class="departmemts__department_title">Development</h5>
+                    <div class="departmemts__department_text">
+                        Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+                    </div>
+                    <hr>
+                </article>
+            </span></a>
+            <a class="departments__link" href="#" ><span>
+                <article class="departmemts__department">
+                    <object class="departmemts__department_icon" typa="image/svg+xml" data="images/icons/iconScrew.svg" width="44px" height="44px"></object>
+                    <h5 class="departmemts__department_title">Customization</h5>
+                    <div class="departmemts__department_text">
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                    </div>
+                    <hr>
+                </article>
+            </span></a>
+            <a class="departments__link" href="#" ><span>
+                <article class="departmemts__department">
+                    <object class="departmemts__department_icon" typa="image/svg+xml" data="images/icons/iconFolder.svg" width="52px" height="36px"></object>
+                    <h5 class="departmemts__department_title">Marketing</h5>
+                    <div class="departmemts__department_text">
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                    </div>
+                    <hr>
+                </article>
+            </span></a>
             
-            <div class="navbar_dropdown">
-               <div class="navbar_dropdown_button"></div>
-                <ul class="navbar_dropdown_list">
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">About us</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Features</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Shortcodes</a>
-                    </li>
-                    <li class="navbar_dropdown_list_item">
-                        <a href="#">Contact</a>
-                    </li>                    
-                </ul>
-            </div>  
-            <picture class="navbar_image">
-                <source type="image/svg+xml" srcset="images/logo.svg">
-                <img src="images/.png" alt="Logo" >
-            </picture>
-            <picture class="navbar_image">
-                <source type="image/svg+xml" srcset="images/logo.svg">
-                <img src="images/logo.png" alt="Logo" >
-            </picture>
-            
-                           
-        </nav>
-
-
-    </header>
+        </section>
+        <section class="realisation">
+            <h3 class="realisation__title main-title">Waxom is Realization of your Ideas.</h3>
+            <div class="realisation__text main-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+            <div class="realisation__pictures">
+                <div class="realisation__pictures_pic realisation__pictures_pic-left" ><img src="images/realizationLeftPic.jpg" ></div>
+                <div class="realisation__pictures_pic-center_wrap"><div class="realisation__pictures_pic realisation__pictures_pic-center"><img src="images/realizationCenterPic.jpg"></div></div>
+                <div class="realisation__pictures_pic realisation__pictures_pic-right" ><img src="images/realizationRightPic.jpg"></div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
